@@ -8,6 +8,8 @@
     <meta name="author" content="Milivoje Ivic">
     <meta name="description" content="Ryan Flores personal portfolio">
     <meta name="keywords" content="Ryan Flores, minimalism, design, minimalistic, UX, UI, digital design">
+    
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/main.css">
@@ -33,20 +35,23 @@
     <nav class="main-nav navbar main_navBar_height" id="navbar">
       <ul  class="nav nav-tabs">
         <li class="nav-item active">
-          <a  href="#work" data-toggle="tab">Work</a>
+          <a  href="#page-1" class="scrollitem selected">Work</a>
         </li class="nav-item">
-        <li class="nav-item"><a href="#me" data-toggle="tab">Me</a>
+        <li class="nav-item"><a href="#page-2" class="scrollitem">Me</a>
       </li>
-      <li class="nav-item"><a href="#you" data-toggle="tab">You</a>
+      <li class="nav-item"><a href="#page-3" class="scrollitem">You</a>
     </li>
   </ul>
 </nav>
 
-<div class="tab-content clearfix main">
-  <div class="tab-pane fade in active" id="work">
+<div class="wrapper">
+
+  <div id="page-1" class="page">
+  <div class="main">
+
     <div class="row single-item">
-      <!--Single portfolio panel-->
       <div class="col-md-6 single-item" id="single-project">
+       <a href="#" class="circle" data-toggle="modal" data-target="#myModal">
         <div class="panel panel-default portfolio-item">
           <div class="panel-body image-placeholder">
             <div class="overlay"></div>
@@ -54,38 +59,44 @@
           <div class="panel-footer">
             <span>Marketing Collateral</span>
             <h3>Project Name</h3>
-            <a href="#" class="circle pull-right" data-toggle="modal" data-target="#myModal"><i class="icon ion-ios-arrow-thin-right"></i></a>
+            <div class="circle pull-right"><i class="icon ion-ios-arrow-thin-right"></i></div>
           </div>
         </div>
+       </a>
+      </div>
+
+      <div class="col-md-6 single-item">
+       <a href="#" class="circle" data-toggle="modal" data-target="#myModal">
+        <div class="panel panel-default portfolio-item">
+          <div class="panel-body image-placeholder">
+            <div class="overlay"></div>
+          </div>
+          <div class="panel-footer">
+            <span>Marketing Collateral</span>
+            <h3>Project Name</h3>
+            <div class="circle pull-right"><i class="icon ion-ios-arrow-thin-right"></i></div>
+          </div>
+        </div>
+       </a>
+      </div>
+
+      <div class="col-md-6 single-item">
+       <a href="#" class="circle" data-toggle="modal" data-target="#myModal">
+        <div class="panel panel-default portfolio-item">
+          <div class="panel-body image-placeholder">
+            <div class="overlay"></div>
+          </div>
+          <div class="panel-footer">
+            <span>Marketing Collateral</span>
+            <h3>Project Name</h3>
+            <div class="circle pull-right"><i class="icon ion-ios-arrow-thin-right"></i></div>
+          </div>
+        </div>
+       </a>
       </div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="icon ion-ios-close-empty"></i></a>
-            <div class="modal-body">
-              <div class="media">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-8 image">
-                      <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
-                    </div>
-                    <div class="col-sm-12 col-md-4 description" id="descr">
-                      <span>Marketing Collateral</span>
-                      <h3>Project Name</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui.</p>
-                    </div>
-                    <a class="more text-center" data-toggle="collapse" data-target="#descr">Less</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Single portfolio panel-->
       <div class="col-md-6 single-item">
+       <a href="#" class="circle" data-toggle="modal" data-target="#myModal">
         <div class="panel panel-default portfolio-item">
           <div class="panel-body image-placeholder">
             <div class="overlay"></div>
@@ -93,24 +104,26 @@
           <div class="panel-footer">
             <span>Marketing Collateral</span>
             <h3>Project Name</h3>
-            <a href="#" class="circle pull-right" data-toggle="modal" data-target="#myModal"><i class="icon ion-ios-arrow-thin-right"></i></a>
+            <div class="circle pull-right"><i class="icon ion-ios-arrow-thin-right"></i></div>
           </div>
         </div>
+       </a>
       </div>
-      <!-- Modal -->
+
+
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog p-m-t" role="document">
           <div class="modal-content">
             <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="icon ion-ios-close-empty"></i></a>
             <div class="modal-body">
               <div class="media">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-sm-12 col-md-8 image">
+                    <div class="col-sm-8 col-md-8 col-xs-12 image">
                       <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
                     </div>
-                    <div class="col-sm-12 col-md-4 description" id="descr">
-                      <span>Marketing Collateral</span>
+                    <div class="col-sm-4 col-md-4 col-xs-12 description" id="descr">
+                      <span class="m-m-b">Marketing Collateral</span>
                       <h3>Project Name</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui.</p>
                     </div>
@@ -122,137 +135,79 @@
           </div>
         </div>
       </div>
-      <!--Single portfolio panel-->
-      <div class="col-md-6 single-item">
-        <div class="panel panel-default portfolio-item">
-          <div class="panel-body image-placeholder">
-            <div class="overlay"></div>
-          </div>
-          <div class="panel-footer">
-            <span>Marketing Collateral</span>
-            <h3>Project Name</h3>
-            <a href="#" class="circle pull-right" data-toggle="modal" data-target="#myModal"><i class="icon ion-ios-arrow-thin-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="icon ion-ios-close-empty"></i></a>
-            <div class="modal-body">
-              <div class="media">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-8 image">
-                      <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
-                    </div>
-                    <div class="col-sm-12 col-md-4 description" id="descr">
-                      <span>Marketing Collateral</span>
-                      <h3>Project Name</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui.</p>
-                    </div>
-                    <a class="more text-center" data-toggle="collapse" data-target="#descr">Less</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Single portfolio panel-->
-      <div class="col-md-6 single-item">
-        <div class="panel panel-default portfolio-item">
-          <div class="panel-body image-placeholder">
-            <div class="overlay"></div>
-          </div>
-          <div class="panel-footer">
-            <span>Marketing Collateral</span>
-            <h3>Project Name</h3>
-            <a href="#" class="circle pull-right" data-toggle="modal" data-target="#myModal"><i class="icon ion-ios-arrow-thin-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="icon ion-ios-close-empty"></i></a>
-            <div class="modal-body">
-              <div class="media">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-8 image">
-                      <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
-                    </div>
-                    <div class="col-sm-12 col-md-4 description" id="descr">
-                      <span>Marketing Collateral</span>
-                      <h3>Project Name</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui.</p>
-                    </div>
-                    <a class="more text-center" data-toggle="collapse" data-target="#descr">Less</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- BS Modal END -->
     </div>
-  </div>
-  <!--ME SECTION-->
-  <div class="tab-pane fade in" id="me">
-    <div class="container horizontal">
-      <div class="row">
-        <div id="me" class="col-md-8 col-md-offset-2 section">
-          <div class="panel panel-default person">
-            <div class="panel-body person-img">
-              <img src="img/Image-1.jpg" alt="Ryan Flores" class="img-responsive">
-              <!-- <div class="overlay"></div> -->
-            </div>
-            <div class="panel-footer">
-              <span>Designer</span>
-              <h3>Ryan Flores</h3>
-              <p>I’m a minimalist designer with a varied creative background that includes photojournalism, print design, animation and product design; and am a Senior UI Designer at RevJet in Silicon Valley. Current obsessions: VR, furniture, judo, bikes, sous vide.</p>
-              <a href="https://www.linkedin.com/" target="_blank"><span class="social">Linkedin</span></a>
-              <a href="https://www.instagram.com/" target="_blank"><span class="social">Instagram</span></a>
-            </div>
-          </div>
+   </div>
+  </div>  
+
+  <div id="page-2" class="page">
+  <div class="main">
+
+    <div id="me" class="me_container section">
+      <div class="panel panel-default person">
+        <div class="panel-body person-img">
+          <img src="img/Image-1.jpg" alt="Ryan Flores" class="img-responsive">
+        
+        </div>
+        <div class="panel-footer sd_content_me">
+          <span>Designer</span>
+          <h3>Ryan Flores</h3>
+          <p>I’m a minimalist designer with a varied creative background that includes photojournalism, print design, animation and product design; and am a Senior UI Designer at RevJet in Silicon Valley. Current obsessions: VR, furniture, judo, bikes, sous vide.</p>
+          <a href="https://www.linkedin.com/" target="_blank"><span class="social">Linkedin</span></a>
+          <a href="https://www.instagram.com/" target="_blank"><span class="social">Instagram</span></a>
         </div>
       </div>
     </div>
-  </div>
-  <!--YOU SECTION-->
-  <div class="tab-pane fade in" id="you">
-    <div class="container-fluid horizontal">
-      <div class="row">
-        <div id="you" class="col-md-6 col-md-offset-3 section">
-          <form role="form" action="contact.php" method="post">
-            <div class="form-group">
-              <span>Name</span>
-              <label class="sr-only" for="contact-subject">Name</label>
-              <input type="text" name="name" placeholder="What's Your Name?" class="contact-name form-control" id="contact-name">
-            </div>
-            <div class="form-group">
-              <span>Email</span>
-              <label class="sr-only" for="contact-email">Email</label>
-              <input type="text" name="email" placeholder="Where Can I Contact You?" class="contact-email form-control" id="contact-email">
-            </div>
-            <div class="form-group">
-              <span>Comment</span>
-              <label class="sr-only" for="contact-message">Message</label>
-              <textarea rows="1" name="message" placeholder="What's On Your Mind?" class="contact-message form-control autoExpand" id="contact-message"></textarea>
-            </div>
-            <div class="buttons">
-              <button type="submit" class="btn first">collaborate</button>
-              <button type="submit" class="btn second">saying hi</button>
-            </div>
-            <p>You can email me at <a href="mailto:hello@ryfl.work?Subject=Hi!" target="_top"><span id="mail" style="font-family: 'proxima_novaregular', sans-serif;">hello@ryfl.work</span></a>. I’m available for small remote projects.</p>
-          </form>
+  </div> 
+</div>
+  
+  <div id="page-3" class="page">
+  <div class="main">
+
+    <div id="you" class="me_container you_container section">
+      <form role="form" action="contact.php" method="post">
+        <div class="form-group">
+          <span>Name</span>
+          <label class="sr-only" for="contact-subject">Name</label>
+          <input type="text" name="name" placeholder="What's Your Name?" class="contact-name form-control" id="contact-name">
         </div>
-      </div>
+        <div class="form-group">
+          <span>Email</span>
+          <label class="sr-only" for="contact-email">Email</label>
+          <input type="text" name="email" placeholder="Where Can I Contact You?" class="contact-email form-control" id="contact-email">
+        </div>
+        <div class="form-group">
+          <span>Comment</span>
+          <label class="sr-only" for="contact-message">Message</label>
+          <textarea rows="1" name="message" placeholder="What's On Your Mind?" class="contact-message form-control autoExpand" id="contact-message"></textarea>
+        </div>
+        
+        <div class="form-group desktop">
+          <div class="buttons_desktop">
+              <button type="submit" class="btn form_buttons fb_b bb_l">Let’s Collaborate</button>
+              <button type="submit" class="btn form_buttons fb_b bb_r">Just Saying Hi</button>
+            </div>
+        </div>
+
+        <div class="form-group tablet-mobile">
+          <div class="buttons_tablet-mobile">
+              <button type="submit" class="btn form_buttons fb_s sb_l">Collaborate</button>
+              <button type="submit" class="btn form_buttons fb_s sb_r">Saying Hi</button>
+            </div>
+        </div>
+        <style type="text/css">
+
+        </style>
+
+
+        <div class="form-group">
+          <div class="mail">
+            <p>You can email me at <span>hello@ryfl.work</span>. I’m available for small remote projects.</p>
+          </div>
+        </div>
+      </form> 
     </div>
+    </div>
+   
   </div>
 </div>
 <script src="js/jquery.js"></script>
