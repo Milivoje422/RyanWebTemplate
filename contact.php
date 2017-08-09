@@ -7,8 +7,8 @@ function isEmail($email) {
  
 if($_POST) {
  
-    $emailTo = 'example@gmail.com';
- 
+    $emailTo = 'milivojeivic@gmail.com';
+    $subject = '';
     $clientEmail = addslashes(trim($_POST['email']));
     $name = addslashes(trim($_POST['name']));
     $message = addslashes(trim($_POST['message']));

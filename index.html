@@ -9,7 +9,7 @@
     <meta name="description" content="Ryan Flores personal portfolio">
     <meta name="keywords" content="Ryan Flores, minimalism, design, minimalistic, UX, UI, digital design">
     
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/main.css">
@@ -49,7 +49,7 @@
   <div id="page-1" class="page">
   <div class="main">
 
-    <div class="row single-item">
+    <div class="row single-item work_section">
       <div class="col-md-6 single-item" id="single-project">
        <a href="#" class="circle" data-toggle="modal" data-target="#myModal">
         <div class="panel panel-default portfolio-item">
@@ -119,11 +119,13 @@
               <div class="media">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-sm-8 col-md-8 col-xs-12 image">
+                    <div class="col-sm-8 col-md-8 col-xs-12 image modal_images">
+                      <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
+                      <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
                       <img class="media-object img-responsive" src="img/Image-1.jpg" alt="...">
                     </div>
                     <div class="col-sm-4 col-md-4 col-xs-12 description" id="descr">
-                      <span class="m-m-b">Marketing Collateral</span>
+                      <span>Marketing Collateral</span>
                       <h3>Project Name</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui.</p>
                     </div>
@@ -168,17 +170,17 @@
         <div class="form-group">
           <span>Name</span>
           <label class="sr-only" for="contact-subject">Name</label>
-          <input type="text" name="name" placeholder="What's Your Name?" class="contact-name form-control" id="contact-name">
+          <input type="text" name="name" placeholder="What's Your Name?" class="contact-name inputs-val form-control" id="contact-name">
         </div>
         <div class="form-group">
           <span>Email</span>
           <label class="sr-only" for="contact-email">Email</label>
-          <input type="text" name="email" placeholder="Where Can I Contact You?" class="contact-email form-control" id="contact-email">
+          <input type="text" name="email" placeholder="Where Can I Contact You?" class="contact-email inputs-val form-control" id="contact-email">
         </div>
         <div class="form-group">
           <span>Comment</span>
           <label class="sr-only" for="contact-message">Message</label>
-          <textarea rows="1" name="message" placeholder="What's On Your Mind?" class="contact-message form-control autoExpand" id="contact-message"></textarea>
+          <textarea rows="1" name="message" placeholder="What's On Your Mind?" class="contact-message inputs-val form-control autoExpand" id="contact-message"></textarea>
         </div>
         
         <div class="form-group desktop">
